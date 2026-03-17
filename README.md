@@ -56,3 +56,41 @@ Uso de testes unitários para lógica isolada
 Uso de E2E apenas para fluxos essenciais
 
 Estrutura simples e organizada para fácil manutenção
+
+
+
+# QA Tests - Financeiro App
+
+##  Estrutura da Pirâmide
+
+- Unitários: validação de regras isoladas
+- Integração: API + regras
+- E2E: fluxo completo do usuário
+
+##  Como rodar
+
+### Backend
+dotnet test
+
+### Frontend
+npm install
+npm run test
+
+### E2E
+npx playwright test
+
+##  Bugs encontrados
+- BUG-001: Menor pode ter receita
+
+## Estratégia
+Foco em regras críticas:
+- Idade
+- Categoria
+- Exclusão cascata
+
+##  Justificativa
+Priorização de regras de negócio ao invés de cobertura superficial.
+
+
+
+
